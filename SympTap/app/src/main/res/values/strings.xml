@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SympTap</string>
+    <string name="my_health">My Health</string>
+    <string name="diagnose">Diagnose</string>
+    <string name="article">Article</string>
+    <string name="consultation">Consultation</string>
+    <string name="about">About</string>
+</resources>
