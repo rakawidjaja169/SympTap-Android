@@ -25,5 +25,14 @@ class HomeFragment : Fragment() {
 
         diagnose_card.setOnClickListener{
         }
+
+        article_card.setOnClickListener{
+        }
+
+        consultation_card.setOnClickListener{
+        }
+
+        about_card.setOnClickListener{
+        }
     }
 }
