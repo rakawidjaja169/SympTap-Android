@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_home.*
-
 
 /**
  * A simple [Fragment] subclass.
@@ -24,15 +24,19 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         diagnose_card.setOnClickListener{
+            view.findNavController().navigate(R.id.action_homeFragment_to_symptomsFragment)
         }
 
         article_card.setOnClickListener{
+            view.findNavController().navigate(R.id.action_homeFragment_to_articleFragment)
         }
 
         consultation_card.setOnClickListener{
+            view.findNavController().navigate(R.id.action_homeFragment_to_consultationFragment)
         }
 
         about_card.setOnClickListener{
+            view.findNavController().navigate(R.id.action_homeFragment_to_aboutFragment)
         }
     }
 }
