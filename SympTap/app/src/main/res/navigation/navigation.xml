@@ -37,10 +37,19 @@
         android:id="@+id/articleFragment"
         android:name="com.example.android.symptap.ArticleFragment"
         android:label="fragment_article"
-        tools:layout="@layout/fragment_article" />
+        tools:layout="@layout/fragment_article" >
+        <action
+            android:id="@+id/action_articleFragment_to_coronavirusFragment"
+            app:destination="@id/coronavirusFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.android.symptap.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/coronavirusFragment"
+        android:name="com.example.android.symptap.coronavirusFragment"
+        android:label="fragment_coronavirus"
+        tools:layout="@layout/fragment_coronavirus" />
 </navigation>
