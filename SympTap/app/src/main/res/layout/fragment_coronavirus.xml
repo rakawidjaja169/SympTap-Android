@@ -25,6 +25,15 @@
             android:layout_height="wrap_content">
         </TextView>
 
+        <TextView
+            android:id="@+id/coronavirusArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/article"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+        </TextView>
+
     </LinearLayout>
 
 </FrameLayout>
