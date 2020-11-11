@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 /**
  * A simple [Fragment] subclass.
  */
-abstract class coronavirusFragment : Fragment() {
+class coronavirusFragment : Fragment() {
 
     private val aR by lazy { ArticleRepository.getInstance(requireContext ()) }
 

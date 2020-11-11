@@ -21,21 +21,22 @@ abstract class ArticleDatabase : RoomDatabase() {
                 INSTANCE ?: buildDatabase(context).also { INSTANCE = it }
             }
 
-        private fun buildDatabase(context: Context) =
-            Room.databaseBuilder(context.applicationContext,
-                ArticleDatabase::class.java, "Sample.db")
-                // prepopulate the database after onCreate was called
-                .addCallback(object : Callback() {
-                    override fun onCreate(db: SupportSQLiteDatabase) {
-                        super.onCreate(db)
-                        // insert the data on the IO Thread
-                        ioThread {
-                            getInstance(context).dataDao().insertData(PREPOPULATE_DATA)
-                        }
-                    }
-                })
-                .build()
+        private fun buildDatabase(context: Context): ArticleDatabase {
+            val PREPOPULATE_DATA = listOf(Article("1", context.getString(R.string.app_name)), Article("2", "Tes 2"))
 
-        val PREPOPULATE_DATA = listOf(Article("1", "Tes"), Article("2", "Tes 2"))
+            return Room.databaseBuilder(context.applicationContext,
+                    ArticleDatabase::class.java, "Article.db")
+                    // prepopulate the database after onCreate was called
+                    .addCallback(object : Callback() {
+                        override fun onCreate(db: SupportSQLiteDatabase) {
+                            super.onCreate(db)
+                            // insert the data on the IO Thread
+                            ioThread {
+                                getInstance(context).dataDao().insertData(PREPOPULATE_DATA)
+                            }
+                        }
+                    })
+                    .build()
+        }
     }
 }
