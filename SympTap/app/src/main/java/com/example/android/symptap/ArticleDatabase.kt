@@ -22,7 +22,9 @@ abstract class ArticleDatabase : RoomDatabase() {
             }
 
         private fun buildDatabase(context: Context): ArticleDatabase {
-            val PREPOPULATE_DATA = listOf(Article("1", context.getString(R.string.app_name)), Article("2", "Tes 2"))
+            val PREPOPULATE_DATA = listOf(
+                    Article("1", context.getString(R.string.descCorona), context.getString(R.string.causeCorona), context.getString(R.string.sympCorona), context.getString(R.string.preventCorona)),
+                    Article("2", "Tes 2", "tes", "tes", "tes"))
 
             return Room.databaseBuilder(context.applicationContext,
                     ArticleDatabase::class.java, "Article.db")

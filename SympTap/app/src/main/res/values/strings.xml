@@ -7,4 +7,55 @@
     <string name="about">About</string>
     <string name="coronavirus">COVID-19</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Artikel -->
+    <string name="descCorona">Virus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian.
+        \n\nSevere acute respiratory syndrome coronavirus 2 (SARS-CoV-2) yang lebih dikenal dengan nama virus Corona adalah jenis baru dari coronavirus yang menular ke manusia. Virus ini bisa menyerang siapa saja, seperti lansia (golongan usia lanjut), orang dewasa, anak-anak, dan bayi, termasuk ibu hamil dan ibu menyusui.
+        \n\nCoronavirus adalah kumpulan virus yang bisa menginfeksi sistem pernapasan. Pada banyak kasus, virus ini hanya menyebabkan infeksi pernapasan ringan, seperti flu. Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat, seperti infeksi paru-paru (pneumonia).
+        \n\nVirus ini menular melalui percikan dahak (droplet) dari saluran pernapasan, misalnya ketika berada di ruang tertutup yang ramai dengan sirkulasi udara yang kurang baik atau kontak langsung dengan droplet.</string>
+    <string name="causeCorona">Seseorang dapat tertular COVID-19 melalui berbagai cara, yaitu:
+        \n\n1. Tidak sengaja menghirup percikan ludah (droplet) yang keluar saat penderita COVID-19 batuk atau bersin
+        \n2. Memegang mulut atau hidung tanpa mencuci tangan terlebih dulu setelah menyentuh benda yang terkena cipratan ludah penderita COVID-19
+        \n3. Kontak jarak dekat dengan penderita COVID-19</string>
+    <string name="sympCorona">Gejala yang paling umum:
+        \n\n1. Demam (suhu tubuh di atas 38 derajat Celsius)
+        \n2. Batuk kering
+        \n3. Sesak napas
+        \n4. Kelelahan
+        \n\nGejala yang sedikit tidak umum:
+        \n1. Rasa tidak nyaman dan nyeri
+        \n2. Nyeri tenggorokan
+        \n3. Diare
+        \n4. Konjungtivitis (mata merah)
+        \n5. Sakit kepala
+        \n6. Hilangnya indera perasa atau penciuman
+        \n7. Ruam pada kulit, atau perubahan warna pada jari tangan atau jari kaki</string>
+    <string name="preventCorona">Untuk mencegah penyebaran COVID-19:
+        \n\nCuci tangan Anda secara rutin. Gunakan sabun dan air, atau cairan pembersih tangan berbahan alkohol.
+        \n1. Selalu jaga jarak aman dengan orang yang batuk atau bersin.
+        \n2. Kenakan masker jika pembatasan fisik tidak dimungkinkan.
+        \n3. Jangan sentuh mata, hidung, atau mulut Anda.
+        \n4. Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu.
+        \n5. Jangan keluar rumah jika merasa tidak enak badan.
+        \n6. Jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis.</string>
+
+    <!-- About  -->
+    <string name="textAbout">About Us</string>
+    <string name="aboutUs"> SympTap, Menjawab Semua Kebutuhan Kesehatanmu
+        \n\nPenuhi semua kebutuhan kesehatan hanya dalam super app no. 1 di Indonesia, SympTap.
+        \n\nMulai dari berkonsultasi bersama Dokter, Buat Janji Konsultasi, Artikel Kesehatan. Tak ada alasan lagi untuk tidak download aplikasi SympTap.
+        \n\nSejak didirikan pada tahun 2020, SympTap hadir sebagai platform kesehatan yang membantu masyarakat Indonesia dalam menentukan keputusan terbaik terkait kesehatan. Hal ini terbukti dari sebanyak lebih dari 28 juta pengguna aktif yang mengakses Alodokter setiap bulannya.
+
+        \n\nSaatnya kamu mengenal 3 fitur utama SympTap:
+        \n1. Chat Bersama Dokter
+        \nKonsultasikan masalah kesehatanmu via SympTap. Lebih dari 20rb dokter umum, spesialis, dan psikolog berpengalaman siap menjawabnya. Kamu bisa mendapatkan resep obat yang kamu butuhkan
+        \n\nDokter yang bertugas di SympTap telah tersertifikasi sehingga dijamin tepercaya. Dapatkan pula jawaban yang akurat dan berkualitas dengan respons cepat, kurang dari 2 menit.
+
+        \n\n2. Artikel Kesehatan Terlengkap
+        \nJelajahi artikel kesehatan dengan beragam topik yang disajikan dalam Bahasa Indonesia yang mudah dipahami. Setiap artikel disusun dari sumber yang tepercaya dan disunting bertahap oleh tim dokter dan editor kami.
+
+        \n\n3. Buat Janji Konsultasi
+        \nJadwalkan konsultasi dengan dokter pilihan berpengalaman di 800 rumah sakit di Indonesia yang bermitra dengan SympTap. Registrasi pasien kini lebih mudah dan cepat karena tinggal mengisi formulir online di SympTap. Dapatkan pula kepastian jadwal dokter dan estimasi biaya untuk kebutuhan konsultasimu.
+
+    </string>
 </resources>

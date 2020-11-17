@@ -11,6 +11,7 @@
         android:id="@+id/coronavirusCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
         android:layout_margin="8dp">
 
         <LinearLayout
@@ -34,11 +35,11 @@
 
                 <!-- Title -->
                 <TextView
+                    style="@style/titleArticle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/coronavirus"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    />
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
 
             </LinearLayout>
 
