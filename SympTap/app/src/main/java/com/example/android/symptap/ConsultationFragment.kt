@@ -30,7 +30,7 @@ class ConsultationFragment : Fragment() {
         bt_send.setOnClickListener {
             val email = Intent(Intent.ACTION_SEND)
             email.putExtra(Intent.EXTRA_EMAIL, arrayOf("raka.widjaja169@gmail.com"))
-            email.putExtra(Intent.EXTRA_SUBJECT, et_subject.text)
+            email.putExtra(Intent.EXTRA_SUBJECT, et_subject.text.toString())
             Log.d("Consultation", "et_subject: ${et_subject.text}")
             email.putExtra(Intent.EXTRA_TEXT, et_message.text)
             email.type = "text/plain"
