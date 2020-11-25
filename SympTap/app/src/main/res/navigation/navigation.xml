@@ -27,7 +27,11 @@
         android:id="@+id/symptomsFragment"
         android:name="com.example.android.symptap.SymptomsFragment"
         android:label="fragment_symptoms"
-        tools:layout="@layout/fragment_symptoms" />
+        tools:layout="@layout/fragment_symptoms" >
+        <action
+            android:id="@+id/action_symptomsFragment_to_quizCoronaVirusFragment"
+            app:destination="@id/quizCoronaVirusFragment" />
+    </fragment>
     <fragment
         android:id="@+id/consultationFragment"
         android:name="com.example.android.symptap.ConsultationFragment"
@@ -52,4 +56,9 @@
         android:name="com.example.android.symptap.coronavirusFragment"
         android:label="fragment_coronavirus"
         tools:layout="@layout/fragment_coronavirus" />
+    <fragment
+        android:id="@+id/quizCoronaVirusFragment"
+        android:name="com.example.android.symptap.QuizCoronaVirusFragment"
+        android:label="fragment_quiz_corona_virus"
+        tools:layout="@layout/fragment_quiz_corona_virus" />
 </navigation>
