@@ -1,15 +1,16 @@
 package com.example.android.symptap
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_quiz_corona_virus.*
 
 class QuizCoronaVirusFragment : Fragment(), View.OnClickListener {
@@ -17,9 +18,12 @@ class QuizCoronaVirusFragment : Fragment(), View.OnClickListener {
     private var mCurrentPosition:Int = 1
     private var mQuestionsList: ArrayList<QuestionCoronavirus>? = null
     private var mSelectedOptionPosition: Int = 0
+    private var mCorrectAnsCoronavirus: Int = 0
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_quiz_corona_virus, container, false)
     }
@@ -65,8 +69,8 @@ class QuizCoronaVirusFragment : Fragment(), View.OnClickListener {
             option.setTextColor(Color.parseColor("#7A8089"))
             option.typeface = Typeface.DEFAULT
             option.background = ContextCompat.getDrawable(
-                    requireContext(),
-                    R.drawable.default_option_border_bg
+                requireContext(),
+                R.drawable.default_option_border_bg
             )
         }
 
@@ -81,6 +85,10 @@ class QuizCoronaVirusFragment : Fragment(), View.OnClickListener {
                 selectedOptionView(tv_optionNo, 2)
             }
             R.id.btn_next -> {
+                val question = mQuestionsList?.get(mCurrentPosition - 1)
+                if (question!!.yesAnswer == mSelectedOptionPosition) {
+                    mCorrectAnsCoronavirus++
+                }
                 mSelectedOptionPosition = 0
                 if (mSelectedOptionPosition == 0) {
                     mCurrentPosition++
@@ -88,6 +96,10 @@ class QuizCoronaVirusFragment : Fragment(), View.OnClickListener {
                     when {
                         mCurrentPosition <= mQuestionsList!!.size -> {
                             setQuestion()
+                        }
+                        else -> {
+                            val dir = QuizCoronaVirusFragmentDirections.actionQuizCoronaVirusFragmentToResultCoronavirus(mQuestionsList!!.size, mCorrectAnsCoronavirus)
+                            view?.findNavController()?.navigate(dir)
                         }
                     }
                 }
@@ -102,8 +114,8 @@ class QuizCoronaVirusFragment : Fragment(), View.OnClickListener {
         tv.setTextColor(Color.parseColor("#363A43"))
         tv.setTypeface(tv.typeface, Typeface.BOLD)
         tv.background = ContextCompat.getDrawable(
-                requireContext(),
-                R.drawable.selected_option_border_bg
+            requireContext(),
+            R.drawable.selected_option_border_bg
         )
     }
 

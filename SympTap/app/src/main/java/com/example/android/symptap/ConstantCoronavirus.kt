@@ -1,6 +1,10 @@
 package com.example.android.symptap
 
 object ConstantCoronavirus {
+
+    const val TOTAL_QUESTION: String = "total_questions"
+    const val CORRECT_ANSWER: String = "correct_answers"
+
     fun getQuestion(): ArrayList<QuestionCoronavirus>{
         val questionList = ArrayList<QuestionCoronavirus>()
 

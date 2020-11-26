@@ -60,5 +60,24 @@
         android:id="@+id/quizCoronaVirusFragment"
         android:name="com.example.android.symptap.QuizCoronaVirusFragment"
         android:label="fragment_quiz_corona_virus"
-        tools:layout="@layout/fragment_quiz_corona_virus" />
+        tools:layout="@layout/fragment_quiz_corona_virus" >
+        <action
+            android:id="@+id/action_quizCoronaVirusFragment_to_resultCoronavirus"
+            app:destination="@id/resultCoronavirus" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultCoronavirus"
+        android:name="com.example.android.symptap.ResultCoronavirus"
+        android:label="fragment_result_coronavirus"
+        tools:layout="@layout/fragment_result_coronavirus" >
+        <argument
+            android:name="totalQuestion"
+            app:argType="integer" />
+        <argument
+            android:name="correctAnswer"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_resultCoronavirus_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

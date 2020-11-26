@@ -11,6 +11,7 @@
     <string name="optionNo">No</string>
     <string name="submit">SUBMIT</string>
     <string name="finish">FINISH</string>
+    <string name="result">RESULT</string>
     <string name="nextQuestion">GO TO NEXT QUESTION</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
